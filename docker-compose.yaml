@@ -9,7 +9,7 @@ services:
     volumes:
         - ./data:/app/data/
         - ./config:/app/config
-        - ./models:/app/pipeline_steps
+        - ./pipeline_steps:/app/pipeline_steps
         - ./report:/app/report
 
   streamlit:
@@ -24,7 +24,7 @@ services:
     volumes:
         - ./data:/app/data/
         - ./config:/app/config
-        - ./models:/app/pipeline_steps
+        - ./pipeline_steps:/app/pipeline_steps
         - ./report:/app/report
 
 networks:
